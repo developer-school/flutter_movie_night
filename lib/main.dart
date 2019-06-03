@@ -69,6 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
             return Card(
               child: ListTile(
                 leading: Image.network(movies[index].image),
+                trailing: Icon(Icons.keyboard_arrow_right),
                 title: Text(movies[index].name),
                 subtitle: Text(movies[index].genre),
               ),
