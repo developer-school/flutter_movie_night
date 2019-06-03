@@ -72,6 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 trailing: Icon(Icons.keyboard_arrow_right),
                 title: Text(movies[index].name),
                 subtitle: Text(movies[index].genre),
+                onTap: () {},
               ),
             );
           }
