@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Movie Night'),
     );
   }
 }
@@ -68,6 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
           if (movies != null) {
             return Card(
               child: ListTile(
+                leading: Image.network(movies[index].image),
                 title: Text(movies[index].name),
                 subtitle: Text(movies[index].genre),
               ),
